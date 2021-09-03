@@ -12,7 +12,7 @@
     <div class="container">
         <a href="/">PetDevShop</a>
         <form method="GET" action="/search">
-            <input type="search" name="q" placeholder="Pesquise por raça" />
+            <input type="search" name="q" placeholder="Pesquise por raça" value={{query}}/>
         </form>
     </div>
 </header>
@@ -20,7 +20,7 @@
     <ul>
         <li class="{{#menu.t}}active{{/menu.t}}"><a href="/">Todos</a></li>
         <li class="{{#menu.d}}active{{/menu.d}}"><a href="/dogs">Cachorros</a></li>
-        <li class=""><a href="/cats">Gatos</a></li>
-        <li class=""><a href="/fishes">Peixes</a></li>
+        <li class="{{#menu.c}}active{{/menu.c}}"><a href="/cats">Gatos</a></li>
+        <li class="{{#menu.f}}active{{/menu.f}}"><a href="/fishes">Peixes</a></li>
     </ul>
 </nav>
