@@ -23,10 +23,21 @@ export const dogs = (req:Request,res:Response) =>{
 }
 
 export const cats = (req:Request,res:Response) =>{
-    res.send('pagina cats')
+    res.render('pages/cats',{
+        menu:createMenuObjects('c'),banner:{
+        titulo:'todos os gatos',
+        background:'banner_cat.jpg'
+    }
+})
 }
 
-export const fishs = (req:Request,res:Response) =>{
-    res.send('pagina peixes')
+
+export const fish = (req:Request,res:Response) =>{
+    res.render('pages/fish',{
+        menu:createMenuObjects('f'),banner:{
+        titulo:'todos os peixes',
+        background:'banner_fish.jpg'
+    }
+})
 }
 
